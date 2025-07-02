@@ -1,0 +1,361 @@
+body{
+    background-color: black;
+    color: #ffffff;
+}
+
+h1{
+  color: #ffffff;
+}
+.navbar{
+
+  background-color: rgb(14, 13, 13);
+}
+.navbar-collapse{
+text-align: center;
+justify-content: center;
+    font-size: 1rem;
+}
+.navbar-collapse li{
+  padding: 15px;
+}
+.navbar-nav .nav-link {
+  color: #ffffff !important; 
+  position: relative;
+  display: inline ;
+}
+/* Hover */
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: 0; 
+  background-color:  #ff6600; /* Vibrant Orange */;
+  transition: width 0.3s ease-in-out;
+}
+.navbar-nav .nav-link:hover::after{
+  
+  width: 100%;
+} 
+
+
+.shoppingcart{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+  display: flex;
+  
+}
+.pickup img{
+  height: 90px;
+}
+.discount img{
+  height: 50px;
+}
+.box{
+  display: flex;
+  padding: 20px;
+}
+.left {
+  flex: 1;
+  
+  padding-right: 20px; /* Space between image and text */
+}
+.right{
+  padding: 14px;
+}
+.form-select{
+  background-color: rgb(14, 13, 13);
+  color: #ffffff;
+ 
+}
+
+/*Nav End*/
+/* Home Banner Css */
+.home{
+    margin-top: 50px;
+}
+.homeimageone{
+    height: 100%;
+    width: 100%;
+}
+.homeimagetwo{
+    height: 100%;
+    width: 100%;
+}
+.homeimagethree{
+    height: 100%;
+    width: 100%;
+}
+.homeimagefour{
+    height: 100%;
+    width: 100%;
+}
+.homeimagefive{
+    height: 100%;
+    width: 100%;
+}
+/* Home Banner Css */
+@media(max-width:585px){
+ .banner4{
+  display: none;
+ }
+}
+  .orange-bg {
+  background-color: #ff6f00 !important;
+  color: white !important;
+}
+
+.orange-text {
+  color: #ff6f00 !important;
+}
+
+.orange-btn {
+  background-color: #ff6f00 !important;
+  color: white !important;
+  border: none;
+}
+
+.orange-btn:hover {
+  background-color: #e65c00 !important;
+  color: white !important;
+}
+
+/* Contactc */
+
+/* contact */
+
+
+/* contact page */
+.branches{
+    text-align: center;
+    
+}
+.branch{
+    height: 200px;
+    width: 30%;
+    background-color: #5c5959;
+    margin: 7px;
+}
+
+
+/*CONTACT FORM*/
+.contactus{
+   align-items: center;
+   text-align: center;
+   border: 3px solid rgb(66, 64, 64);
+   padding: 34px;
+    
+}
+.form-group input{
+    border: 4px solid rgb(0, 0, 0);
+    background-color: #1d1d1d;
+    color: white;
+    align-items: center;
+    text-align: center;
+    margin-left: 23%;
+    width: 50%;
+     
+}
+.heading{
+    margin-top: 80px;
+}
+
+.form-group{
+
+ margin: 10px;
+}
+.branches{
+    text-align: center;
+    
+}
+.branch{
+    height: 200px;
+    width: 30%;
+    background-color: #5c5959;
+    margin: 7px;
+}
+/* card section */
+.cardcat{
+    margin-top: 40px;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid;
+    padding: 20px;
+}
+
+.centerd{
+    height: 150px;
+    width: 150px;
+    margin: auto;
+}  
+.cardbutton{
+    color: #e65c00 ;;
+    padding: 10px;
+}
+.cardbutton:hover{
+    color:  #e65c00 ;
+    border: 1px solid rgba(255, 255, 255, 0.342);
+   border: 2px solid rgb(252, 239, 239);
+   
+}
+.heading{
+    align-items: center;
+    text-align: center;
+}
+.heading span{
+    color: #e65c00 ;
+    align-items: center;
+    text-align: center;
+}
+/* service cards */
+.cardservice{
+    margin-top: 40px;
+    background-color: #141516;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    justify-content: center;
+    border: 2px solid;
+    padding: 20px;
+    
+}
+.sale{
+    align-items: end;
+    text-align: start;
+    height: 38px;
+     margin-right: 20px;
+    width: 70px;
+    padding: 6px;
+    border: 4px solid black;
+    background-color:  #e65c00 ;
+}
+
+.custom-image {
+    height: 200px;
+    width: 100%; /* This ensures the width adjusts proportionally */
+    margin-top: 45px;
+}
+.content{
+align-items: center;
+text-align: center;
+justify-content: center;
+
+    position: relative;
+    bottom: 40%;
+    text-align: center;
+    justify-items: center;
+    margin: 20px;  
+    color: aliceblue;
+}
+
+.content img{
+    height: 100px;
+    margin-top: 130px;
+
+}
+/* category buttons */
+/*CONTACT FORM*/
+
+/* Map */
+  .map-responsive {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; 
+  height: 0;
+  overflow: hidden;
+  border-radius: 10px; 
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* our team */
+.ourteam{
+    align-items:center;
+    text-align: center;
+}
+/* our team */
+/* card section */
+.cardcat{
+    margin-top: 40px;
+    background-color: black;
+    text-align: center;
+    justify-content: center;
+    border: 2px solid;
+    padding: 20px;
+}
+
+/* customers reviews */
+
+/* section 2 last */
+.lastsectionimage {
+    height: 200px;
+    width: 100%;
+}
+
+.sectiontext{
+   position: relative;
+   
+   align-items: center;
+   text-align: center;
+}
+.textsection{
+    height: 200px;
+    width: 100%;
+    background-color: aliceblue;
+}
+
+
+ /* card */
+ 
+
+.catcard{
+    background-color: #1c1816;
+}
+.deccard{
+    height: 25px;
+    width: 5%;
+    background-color: #e4002b;
+    margin-left: 100px;
+}
+.deccardtwo{
+    height: 25px;
+    width: 5%;
+    background-color: #e4002b;
+    margin-left: 160px;
+    bottom: 25px;
+    position: relative;
+    
+}
+.deccardthree{
+    height: 25px;
+    width: 5%;
+    background-color: #e4002b;
+    margin-left: 130px;
+    bottom: 50px;
+    position: relative;
+    
+}
+
+.card{
+    background-color: #1c1816
+}
+.price{
+    
+
+    text-align: center;
+ 
+    font-size: large;
+    
+}
+

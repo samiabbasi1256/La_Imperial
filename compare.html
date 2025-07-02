@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Cards</title>
+  <style>
+    body {
+      background: #111;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      gap: 20px;
+    }
+
+    .card {
+      background: #000;
+      color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      width: 250px;
+      box-shadow: 0 0 15px rgba(255, 165, 0, 0.3);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      background-color: #222;
+    }
+
+    .card-body {
+      padding: 15px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .card-desc {
+      font-size: 14px;
+      color: #aaa;
+      margin-bottom: 10px;
+    }
+
+    .rating {
+      margin-bottom: 15px;
+    }
+
+    .rating span {
+      color: orange;
+      font-size: 18px;
+    }
+
+    .price {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background-color: orange;
+      color: #000;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #333;
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Card 1 -->
+  <div class="card">
+    <img src="https://cdn-icons-png.flaticon.com/512/3534/3534066.png" alt="Shoe">
+    <div class="card-body">
+      <div class="card-title">Red High Heel</div>
+      <div class="card-desc">Stylish and comfortable shoes for any occasion.</div>
+      <div class="rating">
+        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>☆</span>
+      </div>
+      <div class="price">$45.00</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <img src="check.png" alt="Watch">
+    <div class="card-body">
+      <div class="card-title">Modern Watch</div>
+      <div class="card-desc">Elegant wrist watch with a premium look.</div>
+      <div class="rating">
+        <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+      </div>
+      <div class="price">$75.00</div>
+      <button class="btn">Add to Cart</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smooth Circle Under Cursor</title>
+  <style>
+    /* Basic Page Styling */
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-color: #f5f5f5;
+      font-family: sans-serif;
+    }
+
+    /* Custom Circle Cursor */
+    .cursor {
+      position: fixed;
+      width: 30px;
+      height: 30px;
+      border: 2px solid orange;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 9999;
+      transform: translate(-50%, -50%);
+      transition: transform 0.15s ease;
+      transition-property: left, top;
+    }
+  </style>
+</head>
+<body>
+
+  
+
+  <script>
+    // Create the cursor circle
+    const cursor = document.createElement("div");
+    cursor.classList.add("cursor");
+    document.body.appendChild(cursor);
+
+    // Smooth following effect
+    let mouseX = 0, mouseY = 0;
+    let currentX = 0, currentY = 0;
+
+    document.addEventListener("mousemove", function (e) {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animateCursor() {
+      // Smooth movement
+      currentX += (mouseX - currentX) * 1;
+      currentY += (mouseY - currentY) * 1;
+      cursor.style.left = currentX + "px";
+      cursor.style.top = currentY + "px";
+      requestAnimationFrame(animateCursor);
+    }
+
+    animateCursor();
+  </script>
+</body>
+</html>

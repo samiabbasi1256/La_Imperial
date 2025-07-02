@@ -1,0 +1,380 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: sans-serif;
+  background: #000000;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card-wrapper {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.category-card {
+  min-width: 25%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card-content {
+  background: rgb(44, 44, 44);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.card-content:hover {
+  transform: translateY(-5px);
+}
+
+.card-content img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  background: rgba(0,0,0,0.5);
+  color: rgba(0, 0, 0, 0.322);
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 10;
+}
+
+.prev { left: 0; }
+.next { right: 0; }
+
+@media (max-width: 768px) {
+  .category-card { min-width: 50%; }
+}
+
+@media (max-width: 480px) {
+  .category-card { min-width: 100%; }
+}
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 70px;
+  margin-right: 8px;
+}
+
+.brand-name {
+  font-family: 'Poppins', sans-serif; /* ya Montserrat / Orbitron */
+  font-size: 24px;
+  color: white;
+  font-weight: 600;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  background: #111;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(226, 223, 223, 0.685);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  color: orange;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  color: orange;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #ccc;
+}
+
+.card-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  background-color: #000000;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background-color: rgb(36, 35, 35);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.card p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #fdfcfc;
+  line-height: 1.5;
+}
+/* Common animation base */
+.animated {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* Image from left */
+.fade-in-left {
+  transform: translateX(-50px);
+  animation: fadeInLeft 1s ease-out forwards;
+}
+
+/* Text from right */
+.fade-in-right {
+  transform: translateX(50px);
+  animation: fadeInRight 1s ease-out forwards;
+}
+
+/* Keyframes for effects */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+.about-section {
+  scroll-margin-top: 100px;
+  padding-top: 20px;
+}
+.about-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+  height: 110%;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  color: rgb(255, 115, 0);
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #dddddd;
+  line-height: 1.7;
+  
+}
+
+  
+@media(max-width: 500px){
+  .carousel-control-next{
+   display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .find,
+  .for,
+  .for span {
+    font-size: 2rem; /* Adjust the size for smaller screens */
+  }
+  .carousel-item img{
+    width: 100%;
+    height: 30vh;
+    opacity: 0.5;  
+  }
+  .thelast {
+    font-size: 1.5rem; /* Adjust the size for smaller screens */
+  }
+}
+
+/* Responsive Design for Screens Below 768px (Tablets & Smaller) */
+@media screen and (max-width: 768px) {
+  .find,
+  .for,
+  .for span {
+    font-size: 25px; /* Further reduce size for smaller devices */
+  }
+  .carousel-item img{
+    width: 100%;
+    height: 30vh;
+    opacity: 0.5;  
+  }
+  .thelast {
+    font-size: 9px; /* Smaller size for smaller devices */
+  }
+}
+
+/* Responsive Design for Mobile Screens Below 480px */
+@media screen and (max-width: 480px) {
+  .find,
+  .for,
+  .for span {
+    font-size: 25px; /* Further reduce size for smaller devices */
+  }
+  .carousel-item img{
+    width: 100%;
+    height: 30vh;
+    opacity: 0.5;  
+  }
+  .thelast {
+    font-size: 9px; /* Smallest size for mobile */
+  }
+}
+.footer {
+  background-color: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px 0;
+  height: 300px;
+  width: 1200px;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  flex-wrap: wrap;
+  
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section.logo h2 {
+  margin: 0;
+}
+
+.footer-section.links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.footer-section.links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-section.social a img {
+  width: 24px;
+  height: 24px;
+  margin: 0 5px;
+  transition: 0.3s ease;
+}
+
+.footer-section.social a img:hover {
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+}

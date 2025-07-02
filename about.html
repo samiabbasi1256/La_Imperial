@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@500;600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- Css -->
+      <!-- Font Awesome -->
+       
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <link rel="stylesheet" href="index.css">
+      <!-- Responsive -->
+       <link rel="stylesheet" href="mediaquery.css">
+       <!-- Fonts -->
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <title>La Imperial</title>
+  </head>
+  <body>
+           
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img class="logo" src="logo2.png" alt="logo">
+      <span class="brand-name">La Imperial</span>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="assests/Icons/nav.png" style="height: 90px; width: auto; border: 2px solid transparent; " class="navbar-toggler-on" alt="">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="testimonial.html">AI Testimonial</a>
+              </li>
+            </ul>
+            <div class="shoppingcart">
+              <div class="pickup">
+                <div class="box">
+                  <div class="left">
+                    <img src="assests/Icons/store.png" alt="">
+                  </div>
+                  <div class="right">
+                    <div class="mb-2" style="color: rgb(187, 174, 174);" >Products</div>            
+                  <div>
+                   <select id="productSelect" class="form-select" onchange="redirectToPage()">
+                <option selected disabled>Select a Product</option>
+                <option value="refrigerators.html">Refrigerators</option>
+                <option value="washing.html">Washing Machines</option>
+                <option value="microwaves.html">Microwaves</option>
+                <option value="tvs.html">Televisions</option>
+              </select>
+              <script>
+                function redirectToPage() {
+                  const selectedPage = document.getElementById("productSelect").value;
+                  if (selectedPage) {
+                    window.location.href = selectedPage;
+                  }
+                }
+              </script>
+                  </div>     
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        
+        
+      </nav>
+   
+     <!-- <style>
+        
+/* about_us section */
+.aboutbanner{
+    height:  100%;
+    width: 100%;
+}
+     </style>
+     <div class="aboutbannerr">
+   <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <img src="assests/images/aboutbanner.png" class="image-fluid  aboutbanner "   alt="">
+        </div>
+    </div>
+   </div>
+</div> -->
+
+     <div class="container aboutinfo mt-5">
+    <div class="row">
+        <div class="col-sm-6 col-md-6 aboutinfo">
+     
+  <section id="about">
+  <h1>Welcome to <span class="orange-text">La Imperial Appliances</span>!</h1>
+  <p style="color: rgba(255, 255, 255, 0.623);"><span class="orange-text">La Imperial</span> has been a trusted name in home appliances for over 20 years. We pride ourselves on offering high-quality, innovative products that bring convenience and comfort to your everyday life.</p>
+
+  <h3>Our Journey</h3>
+  <p style="color: rgba(255, 255, 255, 0.623);">From humble beginnings as a local appliance shop, <span class="orange-text">La Imperial</span> has grown into a recognized brand, known for its wide range of appliances and unmatched customer service. With the evolution of technology and changing consumer needs, we have expanded our presence through this website to serve our customers better.</p>
+
+  <h1>Our Mission</h1>
+  <p style="color: rgba(255, 255, 255, 0.623);">Our mission is to make modern living more accessible by providing reliable, energy-efficient, and user-friendly appliances from top brands. Whether you’re looking for a high-performance <span class="orange-text">washing machine</span> or a sleek new <span class="orange-text">refrigerator</span>, we strive to offer products that enhance your home and lifestyle.</p>
+
+  <h3 >Our Commitment to Quality</h3>
+  <p style="color: rgba(255, 255, 255, 0.623);"> Quality is the foundation of <span class="orange-text">La Imperial</span>. Every product we sell goes through thorough selection processes, ensuring durability, design, and efficiency. We work with trusted brands like <span class="orange-text">Haier</span>, <span class="orange-text">LG</span>, and <span class="orange-text">Samsung</span> to ensure you receive appliances that last and perform at the highest standards.</p>
+
+  <p>At <span class="orange-text">La Imperial</span>, we believe in making appliance shopping easy, informative, and reliable. That's why our website includes <span class="orange-text">brand-wise filtering</span>, <span class="orange-text">category-based navigation</span>, <span class="orange-text">downloadable product brochures</span>, and even <span class="orange-text">comparison tools</span>—so you can make informed decisions from the comfort of your home.</p>
+</section>
+
+
+<style>
+    .hellone{
+    height: 100%;
+    width: 100%;
+}
+
+</style>
+        </div>
+        <div class="col-sm-6 col-md-6">
+            <img src="assests/images/aboutfirst.png" class="image-fluid hellone"   alt="">
+        </div>
+    </div>
+ </div>
+ 
+<!-- about info -->
+
+<HR/>
+
+<div class="container">
+    <div class="row">
+        <div class="ourteam">
+            <div class="container">
+                <div class="row">
+                    <h1>OUR <span>AMAZING </span> <span class="orange-text">TEAM</span>  <hr class="w-25 m-auto mt-3" style="color: rgb(255, 255, 255);" /></h1>
+                   
+                    <div class="col-sm-12 col-md-4"><div class="cardcat" >
+                        <img src="assests/images/teammember (1).png" class="card-img-top  centerd " alt="...">
+                        <div class="card-body">
+                          <h1 class="card-title">James Matthews</h1>
+                         
+                        </div>
+                      </div></div>
+                      <div class="col-sm-12 col-md-4"><div class="cardcat" >
+                        <img src="assests/images/teammember (2).png" class="card-img-top centerd " alt="...">
+                        <div class="card-body">
+                          <h1 class="card-title">Emily Rodrigue</h1>
+                      
+                        </div>
+                </div>
+            </div><div class="col-sm-12 col-md-4"><div class="cardcat" >
+                <img src="assests/images/teammember (3).png" class="card-img-top centerd " alt="...">
+                <div class="card-body">
+                  <h1 class="card-title">Ryan <br>Patel </h1>
+                
+                </div>
+        </div>
+    </div>
+    
+</div>
+
+<hr/>
+<!--  Our Vision for the Future -->
+<div class="container"></div>
+<div class="row">
+<h1>Our Vision For The <span class="orange-text">Future</span> <hr class="w-25 m-auto mt-3" style="color: rgb(255, 255, 255);" /></h1>
+
+<div class="col-sm-12 col-md-6 mt-4">
+  <h1>At <span class="orange-text">La Imperial</span>,</h1>
+  <p>At <span class="orange-text">La Imperial</span>, we envision expanding our reach and delivering advanced appliances to even more households and businesses.</p>
+
+  <h4><span class="orange-text">OUR GOALS</span></h4>
+  <p>Our goal is to establish new showrooms and enhance our online presence, allowing more customers to explore and shop from our wide range of <span class="orange-text">home appliances</span>.</p>
+
+  <p>We believe every home deserves access to <span class="orange-text">modern, reliable, and efficient appliances</span> that simplify life without compromising on performance or style.</p>
+
+  <h4>By growing our presence, we aim to make <span class="orange-text">La Imperial</span> a household name, known for <span class="orange-text">innovation</span>, <span class="orange-text">durability</span>, and <span class="orange-text">customer satisfaction</span>.</h4>
+</div>
+
+<!--  Our Vision for the Future -->
+
+  <div class="col-sm-12 col-md-6 mt-4">
+    <div class="row">
+      <div class="col-sm-12 col-md-6 mb-4 ">
+      <img src="assests/images/aboutone (1).png" class="image-fluid lastsectionimage"  alt="">
+      <div class="sectiontext">
+        <p> </p>
+      </div>
+
+      </div>
+      <div class="col-sm-12 col-md-6 mb-4">
+        <div class="textsection">
+          <!-- <p>Hello worled</p> -->
+      </div>
+    </div>
+    <div class="col-sm-12 col-md-6 mb-4">
+      <div class="textsection">
+        <!-- <p>Hello worled</p> -->
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-6">
+    <img src="assests/images/aboutone (2).png" class="image-fluid lastsectionimage"  alt="">
+    <div class="sectiontext">
+      <p> </p>
+    </div>
+</div>
+</div>
+<div></div>
+  </div>
+<!--  Our Vision for the Future -->
+<hr/> 
+<!--  Our history -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 col-md-6 mt-4">  <div class="row">
+            <div class="col-sm-12 col-md-6 mb-4 ">
+            <img src="assests/images/abourservice (1).png" class="image-fluid lastsectionimage"  alt="">
+            <div class="sectiontext">
+              <p> </p>
+            </div>
+      
+            </div>
+            <div class="col-sm-12 col-md-6 mb-4">
+              <div class="textsection">
+                <!-- <p>Hello worled</p> -->
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6 mb-4">
+            <div class="textsection">
+              <!-- <p>Hello worled</p> -->
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+          <img src="assests/images/abourservice (2).png" class="image-fluid lastsectionimage"  alt="">
+          <div class="sectiontext">
+            <p> </p>
+          </div>
+      </div>
+      </div>
+      <div></div></div>
+        <div class="col-sm-12 col-md-6 mt-4">
+           <h1>Customer Experience at <span class="orange-text">La Imperial</span></h1>
+
+<p>At <span class="orange-text">La Imperial</span>, we understand that a great shopping experience goes beyond just quality appliances. We are committed to delivering an exceptional customer journey from browsing to post-purchase support.</p>
+
+<h4><span class="orange-text">Friendly and Knowledgeable Staff</span></h4>
+<p>Our experienced team is here to assist you at every step. Whether you're shopping in-store or online, we ensure a <span class="orange-text">friendly and informative</span> experience, helping you make the right choice for your home or business.</p>
+
+<h4><span class="orange-text">A Comfortable and Modern Showroom</span></h4>
+<p>Our showrooms are designed to be <span class="orange-text">welcoming and easy to navigate</span>. With well-organized displays and expert guidance, we aim to make your appliance shopping convenient and enjoyable.</p>
+
+              </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- our team -->
+
+<!-- customers reviews -->
+<hr>
+<div class="container">
+    <div class="row">
+  <div class="heading">
+  <h1>CUSTUMERS <span>REVIEWS</span> <hr class="w-25 m-auto mt-3" style="color: rgb(255, 255, 255);" /></h1>
+</div>
+
+<div class="col-sm-12 col-md-4">
+  <div class="cardservice">
+    <img src="assests/images/pfp (1).png" style="border-radius: 0%;" class="card-img-top centerd" alt="...">
+    <div class="card-body">
+      <h1 class="card-title">Emily</h1>
+      <p  style="color: white;">I bought a washing machine from La Imperial and it’s working perfectly. The staff helped me understand all the features. Highly satisfied!</p>
+      <div class="star"><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-12 col-md-4">
+  <div class="cardservice">
+    <img src="assests/images/pfp (2).png" style="border-radius: 0%;" class="card-img-top centerd" alt="...">
+    <div class="card-body">
+      <h1 class="card-title">Michael</h1>
+      <p style="color: white;">Purchased a new refrigerator from La Imperial. It was delivered on time and installed professionally. Great service and smooth process.</p>
+      <div class="star"><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-12 col-md-4">
+  <div class="cardservice">
+    <img src="assests/images/pfp (3).png" style="border-radius: 0%;" class="card-img-top centerd" alt="...">
+    <div class="card-body">
+      <h1 class="card-title">Jessica</h1>
+      <p style="color: white;">La Imperial has a great collection of appliances. I got my microwave here and it’s exactly what I needed. Good value for money!</p>
+      <div class="star"><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-12 col-md-4 mb-4">
+  <div class="cardservice">
+    <img src="assests/images/pfp (4).png" style="border-radius: 0%;" class="card-img-top centerd" alt="...">
+    <div class="card-body">
+      <h1 class="card-title">Mark</h1>
+      <p style="color: white;">I really liked the showroom layout. It was easy to compare products and I ended up buying a smart oven. The team was helpful throughout.</p>
+      <div class="star"><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-12 col-md-4 mb-4">
+  <div class="cardservice">
+    <img src="assests/images/pfp (5).png" style="border-radius: 0%;" class="card-img-top centerd" alt="...">
+    <div class="card-body">
+      <h1 class="card-title">Daniel</h1>
+      <p  style="color: white;">Great experience buying an air conditioner from La Imperial. The installation team was quick and professional. Very happy with my purchase.</p>
+      <div class="star"><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="col-sm-12 col-md-4 mb-4">
+  <div class="cardservice">
+    <img src="assests/images/pfp (6).png" style="border-radius: 0%;" class="card-img-top centerd" alt="...">
+    <div class="card-body">
+      <h1 class="card-title">Sophia</h1>
+      <p style="color: white;" >I always shop appliances from La Imperial. Their online catalog is easy to use, and product comparisons really help with decision making.</p>
+      <div class="star"><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span><span><i class="bi bi-star-fill"></i></span></div>
+    </div>
+  </div>
+</div>
+
+  
+  <!-- customers reviews -->
+
+<!-- 
+ FOOTER START  -->
+ 
+<footer class="text-center bg-black ">
+  <div class="container-fluid foo pt-4 g-0 mt-5">
+    
+    <!-- Section: Social Media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.facebook.com" target="_blank" style="color: #3b5998;">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+
+      <!-- Twitter -->
+      <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.twitter.com" target="_blank" style="color: #55acee;">
+        <i class="fab fa-twitter"></i>
+      </a>
+
+      <!-- Google -->
+      <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.google.com" target="_blank" style="color: #dd4b39;">
+        <i class="fab fa-google"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.instagram.com" target="_blank" style="color: #ac2bac;">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <!-- LinkedIn -->
+      <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.linkedin.com" target="_blank" style="color: #0077b5;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <!-- GitHub -->
+      <a class="btn btn-link btn-floating btn-lg m-1" href="https://www.github.com" target="_blank" style="color: #333;">
+        <i class="fab fa-github"></i>
+      </a>
+    </section>
+
+    <!-- Copyright -->
+    <div class="text-center foo p-3 text-white" id="copy">
+      <h4>© 2025 Copyright: LaImperial.com</h4>
+    </div>
+  </div>
+</footer>
+
+<hr/>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+ <script>
+ import { Ripple, initMDB } from "mdb-ui-kit";
+    initMDB({ Ripple });
+    </script>
+                     
+<script src="index.js"></script>
+  </body>
+ </html>    
+              
+      
+
+ 
